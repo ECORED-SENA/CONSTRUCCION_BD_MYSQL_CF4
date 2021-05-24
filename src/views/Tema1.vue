@@ -56,14 +56,14 @@
         figure
           img.img-c(src="@/assets/tema1/t-4.svg", alt='Consola de comandos Windows')
       p.mb-2 Lo normal es que se deba indicar algún otro dato para conectar con la base de datos, como el usuario, la clave o la dirección del servidor con el que se quiere conectar. La sintaxis sería la siguiente:
-      .m-4
-        figure
-          img(src="@/assets/tema1/t-5.svg", alt='Consola de comandos Windows', style="width:60%")
+      .col-auto.m-4.bl-bl
+          p.p-4.pp-2 mysql -h nombre_servidor -u nombre_usuario -p
 
       p.mb-2 Si se desea conectar a la base de datos en local y con nombre de usuario root, se tendría que escribir:
-      .m-4
-        figure
-          img(src="@/assets/tema1/t-6.svg", alt='Consola de comandos Windows', style="width:50%")
+
+      .col-auto.m-4.bl-bl
+          p.p-4.pp-2 mysql -h localhost -u root –p
+    
 
       p.mb-2 Lo primero que preguntará será el password para el usuario root. Una vez introducida la clave, se estará dentro de la línea de comandos de MySQL.
   
@@ -82,16 +82,17 @@
 
       .row.m-4.justify-content-around.align-items-center
         .col-5.justify-content-around.align-items-center.mb-4       
-          figure
-            img(src="@/assets/tema1/t-8.svg", alt='Dentro de la consola de MySQL')
+          .col-auto.m-4.bl-bl
+            p.p-4.pp-2 mysql> use mibasedatos;
+    
 
         .col.justify-content-around.align-items-center.mb-4       
           figure
             img(src="@/assets/tema1/t-9.svg", alt='Dentro de la consola de MySQL')
 
         .col-5.justify-content-around.align-items-center.mb-4       
-          figure
-            img(src="@/assets/tema1/t-10.svg", alt='Dentro de la consola de MySQL')
+          .col-auto.m-4.bl-bl1
+            p.p-3.pp-2 Esto conectaría con la base de datos llamada "mibasedatos".
 
       .col-lg-12.cajon.color-primario.p-4.mb-4.bl-blue.row.justify-content-around.align-items-center
         
@@ -144,6 +145,7 @@
       p.mb-4 #[strong DDL:] Data Definition Language es la denominación en inglés que determina su sigla, en español se traduce como lenguaje de definición de datos; muchas veces se pueden llegar a encontrar con el título de operaciones básicas. Estos comandos permiten crear bases de datos, tablas, vistas, eliminar cualquier objeto, modificar el diseño de los mismos. Se utilizan para la construcción de la base de datos y el mantenimiento de la misma.
 
     .h6 Dentro de los comandos DDL se pueden encontrar: 
+    br
     .row.justify-content-md-center
       .col-10
         table
@@ -169,59 +171,58 @@
       .row.justify-content-md-center.mt-5
         .row.justify-content-md-center.bl-blue.m-1
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-              
-                img.img-c(src="@/assets/tema1/t-15.svg", alt='Create | Crear') 
-            .col-9
+                 img.img-c.mb-3(src="@/assets/tema1/t-15.svg", alt='Create | Crear') 
+            .col-lg.justify-content-md-center
               .h6 Create | Crear
               p Este comando permite crear objetos de datos, como nuevas bases de datos, tablas, vistas y procedimientos almacenados.
               br
-              br
+           
               .mb-4
                 p #[strong Ejemplo (crear una tabla)]
                 p create table 'customers';
         .row.justify-content-md-center.bl-gr.m-1
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-16.svg", alt='Create | Crear') 
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-16.svg", alt='Create | Crear') 
+            .col-lg.justify-content-md-center
               .h6 Alter | Modificar
               p Este permite modificar la estructura de una tabla u objeto. Se pueden agregar/quitar campos a una tabla, modificar el tipo de un campo, agregar/quitar índices a una tabla, modificar un trigger, etc.
               br
-              br
+           
               .mb-4
                 p #[strong Ejemplo (agregar columna a una tabla)]
                 p Alter table 'alumnos' add edad int unsigned;
         .row.justify-content-md-center.bl-blue.m-1
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-17.svg", alt='Drop | Eliminar') 
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-17.svg", alt='Drop | Eliminar') 
+            .col-lg.justify-content-md-center
               .h6 Drop | Eliminar
               p Este comando elimina un objeto de la base de datos. Puede ser una tabla, vista, índice, trigger, función, procedimiento o cualquier objeto que el motor de la base de datos soporte. Se puede combinar con la sentencia Alter.
               br
-              br
+           
               .mb-4
                 p #[strong Ejemplo]
                 p Drop table 'alumnos';
         .row.justify-content-md-center.bl-gr.m-1
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-18.svg", alt="Truncate | Borrar tabla").class   
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-18.svg", alt="Truncate | Borrar tabla").class   
+            .col-lg.justify-content-md-center
               .h6 Truncate | Borrar tabla
               p Este comando trunca todo el contenido de una tabla. La ventaja sobre el comando Drop, es que, si se quiere borrar todo el contenido de la tabla, es mucho más rápido, especialmente si la tabla es muy grande. La desventaja es que Truncate solo sirve cuando se quieren eliminar absolutamente todos los registros, ya que no se permite la cláusula Where. Si bien en un principio, esta sentencia parecería ser DML (lenguaje de manipulación de datos), es en realidad una DDL, ya que internamente, el comando Truncate borra la tabla y la vuelve a crear y no ejecuta ninguna transacción.
               br
-              br
+            
               .mb-4
                 p #[strong Ejemplo (crear una tabla)]
                 p Truncate table 'nombre_tabla';
 
-    #t_1_3.titulo-segundo
+    #t_1_3.titulo-segundo.mt-5
       .h4 1.3	Sentencias y comandos DML
 
     .row.justify-content-around.align-items-center
@@ -258,10 +259,10 @@
       .row.justify-content-md-center.mt-5
         .row.justify-content-md-center.bl-blue.m-1      
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-19.svg", alt="Select | Seleccionar").class   
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-19.svg", alt="Select | Seleccionar").class   
+            .col-lg.justify-content-md-center
               .h6 Select | Seleccionar
               p Una instrucción Select sirve para extraer información de una o más tablas de una base de datos.
               br
@@ -361,10 +362,10 @@
 
         .row.justify-content-md-center.bl-gr.mt-3      
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-20.svg", alt="Insert | Insertar (adicionar)").class   
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-20.svg", alt="Insert | Insertar (adicionar)").class   
+            .col-lg.justify-content-md-center
               .h6 Insert | Insertar (adicionar)
               p La instrucción Insert sirve para agregar uno o más registros en una tabla de la base de datos, en la cláusula Insert hay que especificar el nombre de la tabla con una lista de campos (opcional).
               br
@@ -380,10 +381,10 @@
 
         .row.justify-content-md-center.bl-blue.mt-3      
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-21.svg", alt="Udtate | Actualizar").class   
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-21.svg", alt="Udtate | Actualizar").class   
+            .col-lg.justify-content-md-center
               .h6 Udtate | Actualizar
               p La instrucción Update modifica uno o más registros en una tabla, en la cláusula SET, se puede llamar el nombre de una o más columnas y asignarle su nuevo valor.
               br
@@ -401,10 +402,10 @@
 
         .row.justify-content-md-center.bl-gr.mt-3      
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-22.svg", alt="Delete | Eliminar").class   
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-22.svg", alt="Delete | Eliminar").class   
+            .col-lg.justify-content-md-center
               .h6 Delete | Eliminar
               p La cláusula Delete se emplea para borrar uno o más registros de una tabla, se utiliza con la cláusula Where para escribir una condición bajo la cual será o serán eliminados los registros que cumplan con dicha condición.
               br
@@ -453,13 +454,13 @@
               td Quitar permisos.
            
       br
-      .row.justify-content-md-center.mt-5
-        .row.justify-content-md-center.bl-blue.m-1
+      
+      .row.justify-content-md-center.bl-blue.m-1
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-23.svg", alt='Create | Crear') 
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-23.svg", alt='Create | Crear') 
+            .col-lg.justify-content-md-center
               .h6 Grant | Garantizar 
               p La cláusula Grant permite a los administradores del sistema otorgar privilegios y roles que se pueden otorgar a cuentas y roles de usuario. Se aplican estas restricciones de sintaxis:
               br
@@ -511,12 +512,12 @@
               br
               
 
-        .row.justify-content-md-center.bl-gr.m-1
+      .row.justify-content-md-center.bl-gr.m-1
           .row.mt-5
-            .col-3
+            .col-auto.justify-content-md-center
               figure
-                img.img-c(src="@/assets/tema1/t-24.svg", alt='Create | Crear') 
-            .col-9
+                img.img-c.mb-3(src="@/assets/tema1/t-24.svg", alt='Create | Crear') 
+            .col-lg.justify-content-md-center
               .h6 Sentencia Grant o Remoke    
               table
                 thead
