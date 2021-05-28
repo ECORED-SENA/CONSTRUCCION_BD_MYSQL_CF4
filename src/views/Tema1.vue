@@ -20,7 +20,7 @@
             br
             p Es un lenguaje estándar consolidado por el Instituto Americano de Normas (ANSI) y por la Organización de Estándares Internacional (ISO). Está compuesto por comandos, cláusulas, operadores y funciones de agregado.
     .row.p-4
-        p.mb-4 #[strong Para adentrarse complementar la información observar el siguiente video:]
+        p.mb-4 #[strong Para adentrarse a complementar la información, observar el siguiente video:]
         
 
         a.anexo.mb-4.mb-lg-0(href="https://youtu.be/4w_OD5OEgps" target="_blank")
@@ -36,14 +36,14 @@
       .h4 1.1	Conexión a la base de datos
 
     .row.justify-content-around.align-items-center
-      p.mb-4 La conexión al servidor de base de datos de MySQL se puede realizar de dos maneras distintas: utilizando una interfaz de línea de comandos o haciendo uso de la interfaz gráfica de administración, en este caso Workbeanch que es la herramienta con que se ha venido trabajando en los módulos anteriores; a continuación, rápidamente se mostrará cómo establecer la conexión al servidor e iniciar el trabajo con el lenguaje SQL.
+      p.mb-4 La conexión al servidor de base de datos de MySQL se puede realizar de dos maneras distintas: utilizando una interfaz de línea de comandos o haciendo uso de la interfaz gráfica de administración, en este caso Workbench que es la herramienta con que se ha venido trabajando en los módulos anteriores; a continuación, rápidamente se mostrará cómo establecer la conexión al servidor e iniciar el trabajo con el lenguaje SQL.
         br
         br
     .row.justify-content-around.align-items-center.mb-5
 
       .h5 Conexión desde línea de comandos
 
-      p.mb-5 Para establecer la conexión a través de consola se debe utilizar una de comandos de Windows, para ello basta con cargar la consola desde el botón de búsqueda de Windows.
+      p.mb-5 Para establecer la conexión a través de consola se debe utilizar uno de los comandos de Windows, para ello basta con cargar la consola desde el botón de búsqueda de Windows.
       
       .h6.text-center Consola de comandos Windows
 
@@ -97,17 +97,17 @@
       .col-lg-12.cajon.color-primario.p-4.mb-4.bl-blue.row.justify-content-around.align-items-center
         
           .h5 Nota
-          p hay que fijarse que todas las sentencias dentro de la línea de comandos de MySQL acaban en ";". Si no se escribe el punto y coma, lo más seguro es que no se ejecute el comando y vuelva a salir el prompt para seguir introduciendo el comando. Si se quería ejecutar la sentencia escrita antes, con simplemente entrar el ";" será suficiente, es decir, no se debe escribir de nuevo la sentencia entera, solo el ";" y volver a presionar la tecla "enter".
+          p hay que fijarse que todas las sentencias dentro de la línea de comandos de MySQL acaban en "#[strong ;]". Si no se escribe el punto y coma, lo más seguro es que no se ejecute el comando y vuelva a salir el prompt para seguir introduciendo el comando. Si se quería ejecutar la sentencia escrita antes, con simplemente entrar el ";" será suficiente, es decir, no se debe escribir de nuevo la sentencia entera, solo el ";" y volver a presionar la tecla "enter".
 
       p.m-4 Si se quiere ver una lista de las bases de datos alojadas en el servidor, se puede escribir el comando show databases. Así:
-      .h6.text-center Estableciendo la conexión a la base de datos
+      .h6.text-center Primeros comandos SQL
 
       .row.justify-content-md-center
         .col-lg-10      
           figure
             img.img-c(src="@/assets/tema1/t-11.svg", alt='Estableciendo la conexión a la base de datos')
 
-      p.mb-2 De esta manera ya se tiene acceso al  servidor de base de datos sobre el cual se puede iniciar el trabajo con las sentencias y el lenguaje SQL.
+      
     .col-7
       hr
 
@@ -142,7 +142,7 @@
       .h4 1.2	Sentencias y comandos DDL
 
     .row.justify-content-around.align-items-center
-      p.mb-4 #[strong DDL:] Data Definition Language es la denominación en inglés que determina su sigla, en español se traduce como lenguaje de definición de datos; muchas veces se pueden llegar a encontrar con el título de operaciones básicas. Estos comandos permiten crear bases de datos, tablas, vistas, eliminar cualquier objeto, modificar el diseño de los mismos. Se utilizan para la construcción de la base de datos y el mantenimiento de la misma.
+      p.mb-4 #[strong DDL:] Data Definition Language es la denominación en inglés que determina su sigla, en español se traduce como lenguaje de definición de datos; muchas veces se pueden llegar a encontrar con el título de #[strong operaciones básicas]. Estos comandos permiten crear bases de datos, tablas, vistas, eliminar cualquier objeto, modificar el diseño de los mismos. Se utilizan para la construcción de la base de datos y el mantenimiento de la misma.
 
     .h6 Dentro de los comandos DDL se pueden encontrar: 
     br
@@ -163,7 +163,7 @@
             tr
               td Alter
               td
-                | Utilizado para modificar las tablas agregando campos ocambiando la definición de los campos.
+                | Utilizado para modificar las tablas agregando campos o cambiando la definición de los campos.
             tr
               td Truncate
               td Utilizado para truncar todo el contenido de una tabla.
@@ -189,7 +189,7 @@
                 img.img-c.mb-3(src="@/assets/tema1/t-16.svg", alt='Create | Crear') 
             .col-lg.justify-content-md-center
               .h6 Alter | Modificar
-              p Este permite modificar la estructura de una tabla u objeto. Se pueden agregar/quitar campos a una tabla, modificar el tipo de un campo, agregar/quitar índices a una tabla, modificar un trigger, etc.
+              p Este comando permite modificar la estructura de una tabla u objeto. Se pueden agregar/quitar campos a una tabla, modificar el tipo de un campo, agregar/quitar índices a una tabla, modificar un trigger, etc.
               br
            
               .mb-4
@@ -219,7 +219,7 @@
               br
             
               .mb-4
-                p #[strong Ejemplo (crear una tabla)]
+                p #[strong Ejemplo ]
                 p Truncate table 'nombre_tabla';
 
     #t_1_3.titulo-segundo.mt-5
@@ -240,20 +240,20 @@
               tr
                 td Select
                 td
-                  | Utilizado para consultar registros de la base de datos quesatisfagan un criterio determinado.
+                  | Utilizado para consultar registros de la base de datos que satisfagan un criterio determinado.
               tr
                 td Insert
-                td Utilizado para cargar lotes de datos en la base de datos enuna &uacute;nica operaci&oacute;n.
+                td Utilizado para cargar lotes de datos en la base de datos en una &uacute;nica operaci&oacute;n.
               tr
                 td Update
-                td Utilizado para modificar los valores de los campos yregistros especificados.
+                td Utilizado para modificar los valores de los campos y registros especificados.
               tr
                 td Delete
                 td Utilizado para eliminar registros de una tabla de una basede datos.
               tr
                 td Merge
                 td
-                  | Cuando se quiere actualizar/insertar datos de una tabla, seactualiza cuando se cumple la condici&oacute;n e inserta cuando no se cumple.
+                  | Cuando se quiere actualizar/insertar datos de una tabla, se actualiza cuando se cumple la condici&oacute;n e inserta cuando no se cumple.
 
       br
       .row.justify-content-md-center.mt-5
@@ -271,13 +271,13 @@
               P.ms-4 [From - tablas_de_datos]
               p.ms-4 [Where - condición]
               P.ms-4 [Order by - ordenar_por_lista_campos]
-              P.ms-4 [Limit-  limite_de_renglones]
+              P.ms-4 [Limit- limite_de_renglones]
 
               br
             
               p #[strong Ejemplo]
               p Select id, nombre, teléfono 
-              p.ms-4 From personas}
+              p.ms-4 From personas
               br
               p #[strong Select * ]
               P.ms-4 From personas 
@@ -293,36 +293,36 @@
                   tr.bl-blue2
                     th(colspan='2')    Operadores de comparación 
                   tr
-                    td.columna-30 Signo
-                    td.columna-70 Descripción
+                    td.columna-30 #[strong Signo]
+                    td.columna-70 #[strong  Descripción]
                   tr
                     td =
                     td Igual.
                   tr
                     td &lt; 
-                    td Menorque.
+                    td Menor que.
                   tr
                     td &gt; 
-                    td Mayorque.
+                    td Mayor que.
                   tr
                     td &lt;=
-                    td Menorigual que.
+                    td Menor igual que.
                   tr
                     td &gt;=
-                    td Mayorigual que.
+                    td Mayor igual que.
                   tr
                     td &lt;&gt; 
-                    td Distintode.
+                    td Distinto de.
                   tr
                     td !=
-                    td Distintode.
+                    td Distinto de.
               br
               br
 
               p #[strong Ejemplo]
               p Select *  
               p.ms-4 From persona
-              p.ms-4 Where id >=0 
+              p.ms-4 Where id  #[strong >=]0 
               p.ms-4 Order by nombre 
               p.ms-4 Limit 10
 
@@ -332,10 +332,10 @@
               table
                 tbody
                   tr.bl-blue2
-                    th(colspan='2')    Operadores de comparación 
+                    th(colspan='2')    Operadores lógicos
                   tr
-                    td.columna-30 Signo
-                    td.columna-70 Descripción
+                    td.columna-30  #[strong Signo]
+                    td.columna-70  #[strong Descripción]
                   tr
                     td And
                     td “Y”
@@ -350,7 +350,7 @@
               p #[strong Ejemplo]
               p Select *  
               p.ms-4 From persona
-              p.ms-4 Where id >=0 and id<= 30 
+              p.ms-4 Where id #[strong >=0 and id<= ]30 
               p.ms-4 Order by nombre 
               p.ms-4 Limit 10    
               br
@@ -373,11 +373,11 @@
               br
               p #[strong Sintaxis:]
               p Insert [Into] nombre tabla [(lista columnas)]
-              p Values (expresion1[, expresion2]…)
+              p Values ([expresion1, expresion2, ...])
               br
               .mb-4
                 p #[strong Ejemplo ]
-                p Insert into persona (id, nombre, apellido, dirección, teléfono) Values (1, ‘Juan’, ‘Perez’, ‘Carrera 40 35 -20’, 317 876543).
+                p Insert into persona (id, nombre, apellido, dirección, teléfono) Values (1, ‘Juan’, ‘Perez’, ‘Carrera 40 35 - 20’, 317 876543).
 
         .row.justify-content-md-center.bl-blue.mt-3      
           .row.mt-5
@@ -392,7 +392,7 @@
               br
               p #[strong Sintaxis:]
               p Update nombre tabla.
-              p Set nombre_columna= expresion1[, nombre_columna2=expresion2]...
+              p Set nombre_columna= expresion1,[nombre_columna2=expresion2]...
               p [Where condición]
 
               br
@@ -409,7 +409,7 @@
               .h6 Delete | Eliminar
               p La cláusula Delete se emplea para borrar uno o más registros de una tabla, se utiliza con la cláusula Where para escribir una condición bajo la cual será o serán eliminados los registros que cumplan con dicha condición.
               br
-              p Se puede utilizar una su consulta dentro de la cláusula Where, es importante mencionar que si existen constraint de foreign-key estos previenen de no eliminar un registro que tenga relación con otro de otra tabla.
+              p Se puede utilizar una subconsulta dentro de la cláusula Where, es importante mencionar que si existen constraint de foreign-key estos previenen de no eliminar un registro que tenga relación con otro de otra tabla.
               br
               p #[strong Sintaxis:]
               p Delete from nombre tabla
@@ -422,19 +422,12 @@
 
 
 
-
-
-
-
-
-
-
     #t_1_4.titulo-segundo.mt-5
       br
       .h4 1.4	Sentencias y comandos DCL
 
-    .row.justify-content-around.align-items-center
-      p.mb-4 #[strong DCL:] (Data Control Language): permite crear roles, permisos e integridad referencial, así como el control al acceso a la base de datos.
+    .row.justify-content-around.align-items-center.mb-5
+      p.mb-4 #[strong DCL] (Data Control Language): permite crear roles, permisos e integridad referencial, así como el control al acceso a la base de datos.
       p Este tipo de sentencias son utilizadas para la realizar la administración y control de acceso a las bases de datos.
 
     .h6 Dentro de los comandos DML se pueden encontrar: 
@@ -473,7 +466,7 @@
               br  
               p Está permitido asignar tanto privilegios como roles a una cuenta, pero debe usar Grant declaraciones separadas, cada una con la sintaxis apropiada para lo que se va a otorgar.
               br
-              p La cláusula Grant puede aplicarse en tres niveles distintos niveles como se muestra en la siguiente tabla.
+              p La cláusula Grant puede aplicarse en tres niveles distintos como se muestra en la siguiente tabla.
 
               br
               .row.justify-content-md-center
@@ -501,14 +494,14 @@
                         td Los permisos se aplican a las rutinas almacenadas.
               br  
               br      
-              p #[strong Ejemplo (crear una tabla)]
+              p #[strong Ejemplos:]
               p Global: Grant all on *.*
               p Base de datos: Grant all on db_name.*
               p Tabla: Grant all on db_name.tbl_name
               br
-              p Para la cláusula Remoke se utiliza exactamente igual a la sentencia Grant la diferencia radica en que el comando Remoke, quita los permisos o privilegios que se hayan aplicado utilizando para ello los mismos niveles.
+              p Para la cláusula Revoke se utiliza exactamente igual a la sentencia Grant la diferencia radica en que el comando Revoke, quita los permisos o privilegios que se hayan aplicado utilizando para ello los mismos niveles.
               br 
-              p A continuación, se muestra un listado de las opciones o valores que pueden ser usados con la sentencia Grant o Remoke.
+              p A continuación, se muestra un listado de las opciones o valores que pueden ser usados con la sentencia Grant o Revoke.
               br
               
 
@@ -563,7 +556,7 @@
                     td Permite el uso de.
                   tr
                     td Lock tables
-                    td Permite el uso de en tablas sobre las que ya se posea elprivilegio Select.
+                    td Permite el uso de en tablas sobre las que ya se posea el privilegio Select.
                   tr
                     td Process
                     td Permite el uso de.
@@ -575,11 +568,11 @@
                     td Permite el uso de.
                   tr
                     td Replication client
-                    td Permite al usuario preguntar d&oacute;nde est&aacute;n los servidoresesclavo o maestro.
+                    td Permite al usuario preguntar d&oacute;nde est&aacute;n los servidores esclavo o maestro.
                   tr
                     td Replication slave
                     td
-                      | Necesario para la replicaci&oacute;n esclava (para leer eventosdel diario binario desde el maestro).
+                      | Necesario para la replicaci&oacute;n esclava (para leer eventos del diario binario desde el maestro).
                   tr
                     td Select
                     td Permite el uso de.
@@ -604,20 +597,21 @@
 
               br 
               p Es importante aclarar que para poder aplicar o retirar permisos, estos se aplican a usuarios que deben ser creados dentro del servidor de base de datos, para desarrollar estas tareas hay que utilizar los siguientes comandos:
+              br
               p #[strong Sintaxis:]
               p Create user:  'nombre_usuario'@'localhost'  Identified by 'tu_contrasena';
               br
-              br
+          
               p #[strong Ejemplo:]
               p Create user 'sena'@'local host'  Identified BY 'Passw0rd';
               br
-              br
+          
               p Mediante el comando anterior se crea el usuario llamado SENA y se le asigna la contraseña ‘Password’, sin embargo, este usuario no puede acceder a la consola de MySQL por que se tendrían que asignar los permisos necesarios para conectarse y trabajar sobre el servidor de base de datos.
               br
               p #[strong Ejemplo:]
               p Grant all privileges on * . * To 'sena'@'localhost';
               br
-              br
+           
               p Para este caso se estarían aplicando permisos de nivel global al usuario SENA y se les asignaría permisos a todas las bases de datos y todos los objetos que hacen parte de dichas bases de datos, la cláusula All privileges hace que tenga todos los permisos sin ninguna restricción.
               br
 
