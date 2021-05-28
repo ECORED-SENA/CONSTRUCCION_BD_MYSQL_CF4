@@ -358,6 +358,7 @@
               p Además de la sintaxis, se puede encontrar consultas que utilicen las siguientes funciones de agregado: Count, Sum, Avg, Max, Min.
               br
               p Y otros operadores de comparación: Between para intervalo de valores, Like para comparación entre cadenas de caracteres con los Pattern ‘%’ y ‘_’, al igual que la sentencia IN para especificar registros de una base de datos.
+              br
 
 
         .row.justify-content-md-center.bl-gr.mt-3      
