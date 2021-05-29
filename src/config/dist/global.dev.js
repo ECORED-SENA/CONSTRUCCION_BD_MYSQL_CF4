@@ -83,7 +83,7 @@ var _default = {
       regional: 'Regional Santander'
     }, {
       nombre: 'Henry Eduardo Bastidas Paruma',
-      cargo: 'Experto temático Instructor',
+      cargo: 'Experto temático - Instructor',
       centro: 'Centro de Teleinformática y Producción Industrial',
       regional: 'Regional Cauca'
     }, {
@@ -92,12 +92,12 @@ var _default = {
       centro: 'Centro de Diseño y Metrología',
       regional: 'Regional Distrito Capital'
     }, {
-      nombre: 'José Gabriel Ortiz Abella',
-      cargo: 'Revisión metodológica y pedagógica',
-      centro: 'Centro para la Industria de la Comunicación Gráfica',
-      regional: 'Regional Distrito Capital'
-    }, {
       nombre: 'Martha Isabel Martínez Vargas',
+      cargo: 'Productora audiovisual',
+      centro: 'Centro para la Industria del Diseño y la Manufactura',
+      regional: 'Regional Santander'
+    }, {
+      nombre: 'José Gabriel Ortiz Abella',
       cargo: 'Corrección de estilo',
       centro: 'Centro para la Industria de la Comunicación Gráfica',
       regional: 'Regional Distrito Capital'

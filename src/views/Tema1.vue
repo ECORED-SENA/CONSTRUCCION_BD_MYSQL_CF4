@@ -271,7 +271,7 @@
               P.ms-4 [From - tablas_de_datos]
               p.ms-4 [Where - condición]
               P.ms-4 [Order by - ordenar_por_lista_campos]
-              P.ms-4 [Limit- limite_de_renglones]
+              P.ms-4 [Limit - limite_de_renglones]
 
               br
             
