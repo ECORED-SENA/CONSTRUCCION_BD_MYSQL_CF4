@@ -94,7 +94,7 @@ var _default = {
     }, {
       nombre: 'Martha Isabel Martínez Vargas',
       cargo: 'Productora audiovisual',
-      centro: 'Centro para la Industria del Diseño y la Manufactura',
+      centro: 'Centro Industrial del Diseño y la Manufactura',
       regional: 'Regional Santander'
     }, {
       nombre: 'José Gabriel Ortiz Abella',
@@ -112,7 +112,7 @@ var _default = {
       nombre: ['Carlos Julián Ramírez Benítez ', 'Daniel Ricardo Mutis Gómez'],
       cargo: 'Diseño web'
     }, {
-      nombre: ['Daniela Muñoz Bedoya', 'Gilberto Junior Rodriguez Rodriguez', 'Oleg Litvin', 'Wilson Andrés Arenales Cáceres', 'Zuleidy Maria Ruiz Torres'],
+      nombre: ['Daniela Muñoz Bedoya', 'Gilberto Junior Rodríguez Rodríguez', 'Oleg Litvin', 'Wilson Andrés Arenales Cáceres', 'Zuleidy Maria Ruiz Torres'],
       cargo: 'Producción audiovisual'
     }, {
       nombre: 'Jorge Leonardo Camacho Pardo',

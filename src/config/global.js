@@ -109,7 +109,7 @@ export default {
       {
         nombre: 'Martha Isabel Martínez Vargas',
         cargo: 'Productora audiovisual',
-        centro: 'Centro para la Industria del Diseño y la Manufactura',
+        centro: 'Centro Industrial del Diseño y la Manufactura',
         regional: 'Regional Santander',
       },
       {
@@ -138,7 +138,7 @@ export default {
       {
         nombre: [
           'Daniela Muñoz Bedoya',
-          'Gilberto Junior Rodriguez Rodriguez',
+          'Gilberto Junior Rodríguez Rodríguez',
           'Oleg Litvin',
           'Wilson Andrés Arenales Cáceres',
           'Zuleidy Maria Ruiz Torres',
